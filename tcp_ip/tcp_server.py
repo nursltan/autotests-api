@@ -7,18 +7,20 @@ def server():
     server_address = ('localhost', 12345)
     server_socket.bind(server_address)
 
-    server_socket.listen(5)
+    server_socket.listen(10)
+    messages: list[str] = []
     print('Сервер запущен и ждет соединений...')
 
     while True:
         client_socket, client_address = server_socket.accept()
-        print(f'Подключение от: {client_address}')
+        print(f'Пользователь с адресом: {client_address} подключился к серверу')
 
-        data = client_socket.recv(1024).decode()
-        print(f'Получено сообщение: {data}')
+        message = client_socket.recv(1024).decode()
+        print(f'Пользователь с адресом: {client_address} отправил сообщение: {message}')
+        messages.append(message)
 
-        response = f'Сервер получил {data}'
-        client_socket.send(response.encode())
+        client_socket.send('\n'.join(messages).encode())
+        client_socket.close()
 
         client_socket.close()
 
