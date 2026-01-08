@@ -4,11 +4,11 @@ from clients.authentication.authentication_client import get_authentication_clie
 from typing import TypedDict
 
 
-class AuthenticationDict(TypedDict):
+class AuthenticationUserDict(TypedDict):
     email: str
     password: str
 
-def get_private_http_client(user: AuthenticationDict) -> Client:
+def get_private_http_client(user: AuthenticationUserDict) -> Client:
     """
     Функция создаёт экземпляр httpx.Client с аутентификацией пользователя.
 
