@@ -14,6 +14,9 @@ class CreateUserRequestDict(TypedDict):
     middleName: str
 
 class User(TypedDict):
+    """
+    Описание структуры пользователя.
+    """
     id: str
     email: str
     lastName: str
@@ -22,6 +25,9 @@ class User(TypedDict):
 
 
 class CreateUserResponseDict(TypedDict):
+    """
+    Описание структуры ответа создания пользователя.
+    """
     user: User
 
 class PublicUsersClient(APIClient):

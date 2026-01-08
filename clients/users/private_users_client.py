@@ -15,13 +15,19 @@ class UpdateUserRequestDict(TypedDict):
     middleName: str | None
 
 class User(TypedDict):
+    """
+    Описание структуры пользователя.
+    """
     id: str
     email: str
     lastName: str
     firstName: str
     middleName: str
 
-class GetUserResponseDict:
+class GetUserResponseDict(TypedDict):
+    """
+    Описание структуры ответа получения пользователя.
+    """
     user: User
 
 class PrivateUsersClient(APIClient):

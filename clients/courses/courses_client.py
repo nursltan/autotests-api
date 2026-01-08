@@ -2,7 +2,23 @@ from typing import TypedDict
 from httpx import Response
 
 from clients.api_client import APIClient
-from clients.private_http_builder import AuthenticationDict, get_private_http_client
+from clients.files.files_client import File
+from clients.private_http_builder import AuthenticationUserDict, get_private_http_client
+from clients.users.private_users_client import User
+
+
+class Course(TypedDict):
+    """
+    Описание структуры курса.
+    """
+    id: str
+    title: str
+    maxScore: int
+    minScore: int
+    description: str
+    previewFile: File  # Вложенная структура файла
+    estimatedTime: str
+    createdByUser: User  # Вложенная структура пользователя
 
 
 class GetCoursesQueryDict(TypedDict):
@@ -10,6 +26,7 @@ class GetCoursesQueryDict(TypedDict):
     Описание структуры запроса на получение списка курсов.
     """
     userId: str
+
 
 class CreateCourseRequestDict(TypedDict):
     """
@@ -21,7 +38,16 @@ class CreateCourseRequestDict(TypedDict):
     description: str
     estimatedTime: str
     previewFileId: str
-    createdByUserId: str   
+    createdByUserId: str
+
+
+
+class CreateCourseResponseDict(TypedDict):
+    """
+    Описание структуры ответа создания курса.
+    """
+    course: Course
+
 
 class UpdateCourseRequestDict(TypedDict):
     """
@@ -63,7 +89,7 @@ class CoursesClient(APIClient):
         previewFileId, createdByUserId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/api/v1/courses/", json=request)
+        return self.post("/api/v1/courses", json=request)
      
     def update_course_api(self, course_id: str, request: UpdateCourseRequestDict) -> Response:
         """
@@ -84,9 +110,13 @@ class CoursesClient(APIClient):
         """
         return self.delete(f"/api/v1/courses/{course_id}")
     
+    def create_course(self, request: CreateCourseRequestDict) -> CreateCourseResponseDict:
+        response = self.create_course_api(request)
+        return response.json()
+    
 
 
-def get_courses_client(user: AuthenticationDict) -> CoursesClient:
+def get_courses_client(user: AuthenticationUserDict) -> CoursesClient:
     """
     Функция создаёт экземпляр CoursesClient с уже настроенным HTTP-клиентом.
 
