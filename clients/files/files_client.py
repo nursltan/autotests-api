@@ -1,39 +1,9 @@
-
-
-
 from httpx import Response
 from clients.api_client import APIClient
-from typing import TypedDict
-
-from clients.private_http_builder import AuthenticationUserDict, get_private_http_client
-
-
-# Добавили описание структуры файла
-class File(TypedDict):
-    """
-    Описание структуры файла.
-    """
-    id: str
-    url: str
-    filename: str
-    directory: str
+from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema
+from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
 
 
-class CreateFileRequestDict(TypedDict):
-    """
-    Описание структуры запроса на создание файла.
-    """
-    filename: str
-    directory: str
-    upload_file: str
-
-
-# Добавили описание структуры ответа на создание файла
-class CreateFileResponseDict(TypedDict):
-    """
-    Описание структуры ответа создания файла.
-    """
-    file: File
 
 class FilesClint(APIClient):
     """
@@ -47,7 +17,7 @@ class FilesClint(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.get(f"/api/v1/files/{file_id}")
-    def create_file_api(self,request: CreateFileRequestDict) -> Response:
+    def create_file_api(self,request: CreateFileRequestSchema) -> Response:
         """
         Метод создания файла.
 
@@ -56,9 +26,9 @@ class FilesClint(APIClient):
         """
         return self.post(
             "/api/v1/files",
-            data=request,
-            files={"upload_file": open(request['upload_file'], 'rb')}
-            )
+            data=request.model_dump(by_alias=True, exclude={"upload_file"}),
+            files={"upload_file": open(request.upload_file, 'rb')}
+        )
     def delete_file_api(self, file_id: str) -> Response:
         """
         Метод удаления файла.
@@ -67,11 +37,11 @@ class FilesClint(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.delete(f"/api/v1/files/{file_id}")
-    def create_file(self, request: CreateFileRequestDict) -> CreateFileResponseDict:
+    def create_file(self, request: CreateFileRequestSchema) -> CreateFileResponseSchema:
         response = self.create_file_api(request)
-        return response.json()
+        return CreateFileResponseSchema.model_validate_json(response.text)
 
-def get_files_client(user: AuthenticationUserDict) -> FilesClint:
+def get_files_client(user: AuthenticationUserSchema) -> FilesClint:
     """
     Функция создаёт экземпляр FilesClient с уже настроенным HTTP-клиентом.
 
