@@ -2,7 +2,7 @@
 from typing import TypedDict
 from httpx import Response
 from clients.api_client import APIClient
-from clients.exercises.exercises_chema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, GetExerciseResponseSchema, GetExercisesQuerySchema, GetExercisesResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, GetExerciseResponseSchema, GetExercisesQuerySchema, GetExercisesResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
 
 
