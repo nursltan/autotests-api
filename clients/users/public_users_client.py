@@ -1,8 +1,7 @@
-from typing import TypedDict
 from httpx import Response
 from clients.public_http_builder import get_public_http_client
 from clients.api_client import APIClient
-from pydantic_create_user import CreateUserRequestSchema, CreateUserResponseSchema
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
 
 
 class PublicUsersClient(APIClient):
