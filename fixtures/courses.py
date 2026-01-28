@@ -8,7 +8,7 @@ from fixtures.files import FileFixture
 from pydantic import BaseModel
 
 
-class CourseFixture:
+class CourseFixture(BaseModel):
     request: CreateCourseRequestSchema
     response: CreateCourseResponseSchema
 

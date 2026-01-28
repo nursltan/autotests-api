@@ -31,6 +31,9 @@ class GetCoursesQuerySchema(BaseModel):
     """
     user_id: str = Field(alias="userId")
 
+class GetCoursesResponseSchema(BaseModel):
+    courses: list(CourseSchema)
+
 class CreateCourseRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание курса.
@@ -64,9 +67,8 @@ class UpdateCourseRequestSchema(BaseModel):
     description: str | None = Field(default_factory=fake.text)
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.estimated_time)
 
-class UdateCourseResponseSchema(BaseModel):
+class UpdateCourseResponseSchema(BaseModel):
     """
     Описание структуры ответа обновления курса.
     """
     course: CourseSchema
-print(UpdateCourseRequestSchema())
