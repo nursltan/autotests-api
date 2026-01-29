@@ -37,7 +37,7 @@ class ExercisesClient(APIClient):
         """
         return self.post("/api/v1/exercises", json=request.model_dump(by_alias=True))
     
-    def update_exercise_api(self, request: UpdateExerciseRequestSchema, exercise_id: str) -> Response:
+    def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema ) -> Response:
         """
         Метод обновления задания.
 
