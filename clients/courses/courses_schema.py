@@ -32,7 +32,7 @@ class GetCoursesQuerySchema(BaseModel):
     user_id: str = Field(alias="userId")
 
 class GetCoursesResponseSchema(BaseModel):
-    courses: list(CourseSchema)
+    courses: list[CourseSchema]
 
 class CreateCourseRequestSchema(BaseModel):
     """
