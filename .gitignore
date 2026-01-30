@@ -14,3 +14,4 @@ __pycache__/
 .DS_Store
 
 testdata/files
+allure-results/
