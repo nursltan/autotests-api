@@ -5,6 +5,7 @@ from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorRe
 from clients.files.files_client import FilesClient
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, GetFileResponseSchema
 from fixtures.files import FileFixture
+from config import settings
 from tools.assertions.base import assert_status_code
 from tools.assertions.files import assert_create_file_response, assert_create_file_with_empty_directory_response, assert_create_file_with_empty_filename_response, assert_file_not_found_response, assert_get_file_response, assert_get_file_with_incorrect_file_id_response
 from tools.assertions.schema import validate_json_schema
@@ -30,7 +31,7 @@ class TestFiles:
     @allure.severity(Severity.BLOCKER)
     @allure.sub_suite(AllureStory.CREATE_ENTITY)
     def test_create_file(self, files_client: FilesClient):
-        request = CreateFileRequestSchema(upload_file="./testdata/files/2.png")
+        request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file)
         response = files_client.create_file_api(request)
         response_data = CreateFileResponseSchema.model_validate_json(response.text)
         assert_status_code(response.status_code, HTTPStatus.OK)
@@ -59,7 +60,7 @@ class TestFiles:
     def test_create_file_with_empty_filename(self, files_client: FilesClient):
         request = CreateFileRequestSchema(
             filename="",
-            upload_file="./testdata/files/2.png"
+            upload_file=settings.test_data.image_png_file
         )
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
@@ -75,7 +76,7 @@ class TestFiles:
     def test_create_file_with_empty_directory(self, files_client: FilesClient):
         request = CreateFileRequestSchema(
             directory="",
-            upload_file="./testdata/files/2.png"
+            upload_file=settings.test_data.image_png_file
         )
         response = files_client.create_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
