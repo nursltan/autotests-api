@@ -2,7 +2,7 @@ from httpx import Response
 from clients.public_http_builder import get_public_http_client
 from clients.api_client import APIClient
 import allure
-from typing import TypedDict
+from tools.routes import APIRoutes
 from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema, RefreshRequestSchema
 
 
@@ -19,7 +19,7 @@ class AuthenticationClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            "/api/v1/authentication/login", 
+            f"{APIRoutes.AUTHENTICATION}/login", 
             json=request.model_dump(by_alias=True)
         )
     
@@ -32,7 +32,7 @@ class AuthenticationClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            "/api/v1/authentication/refresh",
+            f"{APIRoutes.AUTHENTICATION}/refresh",
             json=request.model_dump(by_alias=True)
         )
     
