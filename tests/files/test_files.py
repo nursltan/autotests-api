@@ -38,7 +38,7 @@ class TestFiles:
         assert_create_file_response(request, response_data)
 
         validate_json_schema(response.json(),response_data.model_json_schema())
-        
+   
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Get file")
@@ -52,6 +52,21 @@ class TestFiles:
         assert_get_file_response(response_data, function_file.response)
         validate_json_schema(response.json(),response_data.model_json_schema())
     
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.title("Delete file")
+    @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
+    def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
+        delete_response = files_client.delete_file_api(function_file.response.file.id)
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = files_client.get_file_api(function_file.response.file.id)
+        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+        assert_file_not_found_response(get_response_data)
+
+        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
+
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
     @allure.title("Create file with empty filename")
@@ -84,20 +99,7 @@ class TestFiles:
         assert_create_file_with_empty_directory_response(response_data)
         validate_json_schema(response.json(), response_data.model_json_schema())
     
-    @allure.tag(AllureTag.DELETE_ENTITY)
-    @allure.story(AllureStory.DELETE_ENTITY)
-    @allure.title("Delete file")
-    @allure.severity(Severity.NORMAL)
-    @allure.sub_suite(AllureStory.DELETE_ENTITY)
-    def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
-        delete_response = files_client.delete_file_api(function_file.response.file.id)
-        assert_status_code(delete_response.status_code, HTTPStatus.OK)
-
-        get_response = files_client.get_file_api(function_file.response.file.id)
-        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
-        assert_file_not_found_response(get_response_data)
-
-        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
+    
     
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
