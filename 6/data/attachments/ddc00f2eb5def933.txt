@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjQwLjc2NjY2OSIsInVzZXJfaWQiOiI4ZDIwNzQyZi02NjA3LTRiZGYtODdjNy1lNjZlMWFiY2UxNmEifQ.pqGhDnhCoXYrBrpf7zmznBY2Nmp_wUJQnBOhMFr2EcA' \
+  -H 'content-length: 502' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Изучить одиннадцать бетонный войти рис заложить.","courseId":"03eca8f9-3aa9-45bd-8a83-36739f765313","maxScore":80,"minScore":3,"orderIndex":43,"description":"Школьный сынок скользить. Песня важный похороны. Секунда идея оборот выбирать вариант.\nКуча набор разуметься ботинок команда коммунизм провал.","estimatedTime":"1 weeks"}'

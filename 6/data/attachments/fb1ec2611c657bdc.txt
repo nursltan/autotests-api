@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjQxLjk1MTQ3MCIsInVzZXJfaWQiOiIxODE1YTljMy1mMjkyLTQ3NWUtYTFiNi0wMTUyNWNkNGJhZDgifQ.oXvSK1rmLatgT3WAGgmbctDeEAKq_gjsE2bKT-QkvIQ' \
+  -H 'content-length: 537' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Отдел четко мусор редактор пламя изба мера.","maxScore":68,"minScore":13,"description":"Совещание танцевать вывести мгновение картинка успокоиться казнь. Зарплата термин трубка товар спалить. Решение через тревога спичка страсть.","estimatedTime":"8 weeks","previewFileId":"86e2df4e-831a-4954-a97e-afb9ef64b338","createdByUserId":"1815a9c3-f292-475e-a1b6-01525cd4bad8"}'

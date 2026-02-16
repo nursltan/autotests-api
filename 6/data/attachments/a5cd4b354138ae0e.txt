@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:30 Make PATCH request to http://localhost:8000/api/v1/courses/85a12bda-c9de-43b6-a5cf-ef4f39aeb13a
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/courses/85a12bda-c9de-43b6-a5cf-ef4f39aeb13a
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:25 Check update course response
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Реклама лиловый зачем ставить.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 61
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 20
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Спешить дремать разуметься правильный роскошный медицина спалить. Армейский витрина успокоиться сохранять заявление радость.
+Счастье выгнать разуметься. Новый поставить что.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 3 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 validate JSON schema

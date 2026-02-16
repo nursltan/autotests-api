@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjM4LjE2NjYyOSIsInVzZXJfaWQiOiI5MDk2NDQzOC1hMzhiLTQ3MTMtODBiNS1lYmIzODY5ZmJkODUifQ.WpR0txSsqGkajn7pZSfNSFea7pgJEef1C-Uga1zvo8I' \
+  -H 'content-length: 566' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Трубка холодно привлекать рассуждение призыв.","maxScore":80,"minScore":6,"description":"Кидать бочок расстегнуть горький академик. Вывести да теория процесс кузнец уточнить банда. Потрясти покидать перебивать перебивать сохранять что реклама.","estimatedTime":"2 weeks","previewFileId":"b4ff1cc2-04cd-4eee-9218-f270a4fd2a4b","createdByUserId":"90964438-a38b-4713-80b5-ebb3869fbd85"}'

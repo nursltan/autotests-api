@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:82 Check create course response
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Направо поздравлять чем.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 97
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 12
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Казнь мрачно угроза что. Развитый постоянный жидкий сопровождаться настать. Плясать боец точно торопливый интеллектуальный рис.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 3 weeks
+INFO     BASE_ASSERTIONS:base.py:36 Check that "preview_file_id" equals to b61c3ef6-482b-4c27-a393-04b5c1c2202b
+INFO     BASE_ASSERTIONS:base.py:36 Check that "created_by_user_id" equals to da40a514-9e8b-43dc-b551-2e7ffc7e80cb
+INFO     SCHEMA_ASSERTIONS:schema.py:20 validate JSON schema

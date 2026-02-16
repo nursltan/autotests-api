@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjQxLjY3ODU0NSIsInVzZXJfaWQiOiI4YzRmYzg2Zi0yZGJhLTQwZDEtOTM4OC05Y2NhMjNmMjcyZGUifQ.smh8CIb8QVYUklbGiXme5uRinMehxMNco8sr9FF1Hy0' \
+  -H 'content-length: 436' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Премьера житель иной дрогнуть вперед горький.","maxScore":87,"minScore":4,"description":"Скрытый рот коммунизм посвятить. Ребятишки четыре страсть карандаш наслаждение упор.","estimatedTime":"10 weeks","previewFileId":"647834d4-f530-434c-9438-de537f5f3119","createdByUserId":"8c4fc86f-2dba-40d1-9388-9cca23f272de"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjQwLjc2NjY2OSIsInVzZXJfaWQiOiI4ZDIwNzQyZi02NjA3LTRiZGYtODdjNy1lNjZlMWFiY2UxNmEifQ.pqGhDnhCoXYrBrpf7zmznBY2Nmp_wUJQnBOhMFr2EcA' \
+  -H 'content-length: 435' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Плод приходить страсть.","maxScore":99,"minScore":7,"description":"Единый роскошный расстройство витрина витрина заложить вскакивать. Миг дошлый теория перебивать волк рота.","estimatedTime":"7 weeks","previewFileId":"cabe9ad9-39ff-4bf3-b904-0563409c24e9","createdByUserId":"8d20742f-6607-4bdf-87c7-e66e1abce16a"}'

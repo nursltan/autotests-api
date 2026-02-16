@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjM5LjU4NDM2MCIsInVzZXJfaWQiOiJhMDVkNzg5MC05ODQ5LTQ3MzYtOTczMS04MWJlZjgzOTM1ZDUifQ.4Z5dvdkrmICuHQltu48eR9JyCi7O2Ykbo-HRd-6HWhk' \
+  -H 'content-length: 504' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Вздрогнуть около прошептать жидкий очередной рай природа.","maxScore":62,"minScore":15,"description":"Доставать бетонный дурацкий. Конструкция сынок пропасть дружно. Остановить ребятишки идея порядок налоговый.","estimatedTime":"9 weeks","previewFileId":"ad460bb5-d9e6-4620-b12d-d4d98063ae97","createdByUserId":"a05d7890-9849-4736-9731-81bef83935d5"}'

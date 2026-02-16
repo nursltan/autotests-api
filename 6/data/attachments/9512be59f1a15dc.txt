@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/85a12bda-c9de-43b6-a5cf-ef4f39aeb13a' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjM5LjU4NDM2MCIsInVzZXJfaWQiOiJhMDVkNzg5MC05ODQ5LTQ3MzYtOTczMS04MWJlZjgzOTM1ZDUifQ.4Z5dvdkrmICuHQltu48eR9JyCi7O2Ykbo-HRd-6HWhk' \
+  -H 'content-length: 464' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Реклама лиловый зачем ставить.","maxScore":61,"minScore":20,"description":"Спешить дремать разуметься правильный роскошный медицина спалить. Армейский витрина успокоиться сохранять заявление радость.\nСчастье выгнать разуметься. Новый поставить что.","estimatedTime":"3 weeks"}'

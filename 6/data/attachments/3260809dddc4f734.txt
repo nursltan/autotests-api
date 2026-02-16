@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA5OjI3OjQyLjY0MDYzMiIsInVzZXJfaWQiOiJlYjJmMzNlZi03NTM5LTQwZGYtYmM5Zi00M2NmMDBiZGNiMWUifQ.7kI56Ywl-wBkcooFL5x1cAgY8FoJwLPVahd9r583EGs' \
+  -H 'content-length: 579' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Горький помолчать полностью мелькнуть намерение светило издали.","courseId":"a128b3ff-54ce-4177-a611-301ae2d17774","maxScore":84,"minScore":7,"orderIndex":11,"description":"Мгновение уронить вперед. Указанный правильный потом затянуться. Торговля поймать падаль мелочь крыса пропадать свежий.\nПадаль выразить отметить вообще багровый обида.","estimatedTime":"2 weeks"}'
