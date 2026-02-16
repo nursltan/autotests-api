@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjM0LjIzODg1NCIsInVzZXJfaWQiOiI3MjAwYmFjMC1kYzYzLTRmOTgtYTQxMi00YzhkZTUxZDQ3NjgifQ.-Z2ah1edctBsxrSUqBoe70dD3JYW7IMK4ZCY2e24u8A' \
+  -H 'content-length: 470' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Горький посидеть решетка ответить.","maxScore":92,"minScore":19,"description":"Ход серьезный интернет смертельный бетонный растеряться адвокат конференция. Построить присесть цель постоянный.","estimatedTime":"8 weeks","previewFileId":"0d1858cf-960a-453e-9daf-46a1f33964c8","createdByUserId":"7200bac0-dc63-4f98-a412-4c8de51d4768"}'

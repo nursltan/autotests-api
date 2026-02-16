@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjMwLjU2MzU5NiIsInVzZXJfaWQiOiI4ZWUxMjBlNS0yMzU2LTQ5ZDYtYjMyMC02ZGY3NmEwMmVlZTYifQ.GiUIohwhAy2BZMV_Md0xx1eKuh9A0SzaGHjfnomEJHM' \
+  -H 'content-length: 543' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Терапия сходить правильный настать потянуться.","maxScore":52,"minScore":27,"description":"Полностью опасность желание да вскинуть салон соответствие. Полевой жидкий болото. Ребятишки пол социалистический покинуть тюрьма понятный.","estimatedTime":"10 weeks","previewFileId":"cb70b7b9-79c8-4584-90c5-0a2d52dabbf0","createdByUserId":"8ee120e5-2356-49d6-b320-6df76a02eee6"}'

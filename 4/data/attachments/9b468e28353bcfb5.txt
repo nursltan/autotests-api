@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjMzLjYxNjQ5OSIsInVzZXJfaWQiOiJhYjMwMmNmMC03YjE0LTQxNzgtODcyZi0zNjY5OWZjYWVlODcifQ.mLESpdTiuka_0wPasGJOvVlZcSqhTQhq_biEbAEfvT4' \
+  -H 'content-length: 650' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Приличный находить чем освобождение невозможно другой.","maxScore":82,"minScore":6,"description":"Протягивать сынок возможно падаль ленинград. Материя покидать заявление.\nОзначать постоянный зарплата грустный единый монета равнодушный. Хлеб ложиться блин направо коммунизм легко актриса.","estimatedTime":"1 weeks","previewFileId":"40811efb-af4d-49f9-b56e-78930611f424","createdByUserId":"ab302cf0-7b14-4178-872f-36699fcaee87"}'

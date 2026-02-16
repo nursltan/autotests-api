@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjMyLjM3MzE3OCIsInVzZXJfaWQiOiI5NjY0NTFjZi1lMjE1LTQwNWQtODBkMi1iNjkzYjUzNzdmMTcifQ.vXGtwnCI4H6Wq8cwvHJReIE34IybSHCGMIpCFoE4qL4' \
+  -H 'content-length: 576' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Наступать хозяйка иной багровый.","maxScore":50,"minScore":18,"description":"Зачем медицина июнь. Встать неправда точно совещание стакан. Разводить изучить беспомощный печатать коробка эффект. Означать картинка порт столетие отметить художественный.","estimatedTime":"1 weeks","previewFileId":"8cbbbb9e-e73f-4ca4-beca-945a4d17866f","createdByUserId":"966451cf-e215-405d-80d2-b693b5377f17"}'

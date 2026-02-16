@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjI5Ljk2OTYzNyIsInVzZXJfaWQiOiI1MTk0MmNlNS01ZTQ1LTQ0OWMtYjdkNy03YTIxYmM1ODFiYmMifQ.SQWpr33G-ETe7ip0CRzAE1ViwpaX_uKeaAG4eaRj4ws' \
+  -H 'content-length: 628' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Промолчать мучительно налоговый белье поколение.","maxScore":77,"minScore":14,"description":"Волк спичка кольцо природа сопровождаться.\nЧеловечек столетие добиться мимо мусор командир витрина. Привлекать невыносимый пропасть плавно. Издали освободить невозможно сомнительный.","estimatedTime":"7 weeks","previewFileId":"7ef4b469-1235-4365-a887-5626131cddf0","createdByUserId":"51942ce5-5e45-449c-b7d7-7a21bc581bbc"}'

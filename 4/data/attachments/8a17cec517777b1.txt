@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjMxLjc0MTM0OSIsInVzZXJfaWQiOiJkZGIxNTUyNS1jYWRiLTRhOTgtYWRiZS1kMWM1NGQzODU1N2EifQ.po3r_typeI-eE_5A7COpRoKhhHYfk1eI4p3qJg4XFmc' \
+  -H 'content-length: 555' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Мотоцикл покидать через выгнать развернуться слать пятеро.","courseId":"89ceb6b3-b621-4235-956b-6135c92dfb5c","maxScore":98,"minScore":6,"orderIndex":99,"description":"Низкий штаб необычный один ручей правильный запеть. Славный угол идея остановить вскакивать изменение. Неправда карандаш школьный четыре вряд интеллектуальный.","estimatedTime":"10 weeks"}'

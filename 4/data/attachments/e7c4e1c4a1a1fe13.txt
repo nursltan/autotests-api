@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjMxLjc0MTM0OSIsInVzZXJfaWQiOiJkZGIxNTUyNS1jYWRiLTRhOTgtYWRiZS1kMWM1NGQzODU1N2EifQ.po3r_typeI-eE_5A7COpRoKhhHYfk1eI4p3qJg4XFmc' \
+  -H 'content-length: 576' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Вскинуть изображать возбуждение провинция народ смертельный.","maxScore":54,"minScore":30,"description":"Песня степь невыносимый секунда рот фонарик рис. Мусор инфекция задрать серьезный изба. Бочок задержать полюбить тусклый монета покидать падать.","estimatedTime":"2 weeks","previewFileId":"7b0c1f49-1723-44ef-bd4e-6cb090f5634a","createdByUserId":"ddb15525-cadb-4a98-adbe-d1c54d38557a"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ0OjMyLjk3NTQ5MSIsInVzZXJfaWQiOiJkN2ZiMGJkZC1hMDYzLTQ5YzgtODM3OS03MTQ4NzAyZGUzMmMifQ.8yfHO7m8K685GwBZy_hUbv2r8KgS2qMgvFAjVlsqVVI' \
+  -H 'content-length: 513' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Второй славный рис материя.","maxScore":100,"minScore":30,"description":"Четыре дошлый дрогнуть плод вскакивать.\nРазнообразный граница вперед жидкий виднеться постоянный. Угроза волк развернуться сомнительный мусор.","estimatedTime":"5 weeks","previewFileId":"9ea4fa96-08b7-4a86-890b-628ddf16944b","createdByUserId":"d7fb0bdd-a063-49c8-8379-7148702de32c"}'
