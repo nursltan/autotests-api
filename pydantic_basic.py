@@ -29,6 +29,7 @@ import uuid
 from pydantic import BaseModel, Field, ConfigDict, ValidationError, computed_field, EmailStr, HttpUrl
 from pydantic.alias_generators import to_camel
 
+
 class FileSchema(BaseModel):
     id: str
     filename: str
