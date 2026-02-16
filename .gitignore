@@ -14,7 +14,6 @@ __pycache__/
 # OS
 .DS_Store
 
-testdata/files
 #allure
 allure-results/
 allure-report/
