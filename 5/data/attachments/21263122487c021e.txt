@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjA5LjU5NTk5MCIsInVzZXJfaWQiOiI2YWU4OTM3MS04NTAzLTQyYzUtOGQwYy0wMmM1ZDczYWM0NDMifQ.geiFVi7KgT_vlS7pJ6jwRbQOGPuki-E3-KhMy5BvIHc' \
+  -H 'content-length: 413' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Плясать один жестокий порода.","courseId":"579aae8e-4a48-494e-8462-3d206e951260","maxScore":84,"minScore":14,"orderIndex":23,"description":"Самостоятельно плавно бригада сбросить смеяться помимо. Интеллектуальный избегать основание цепочка банк левый.","estimatedTime":"10 weeks"}'

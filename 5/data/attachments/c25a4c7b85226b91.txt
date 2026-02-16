@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:30 Make GET request to http://localhost:8000/api/v1/exercises/2081c77b-1341-4316-bda9-25b75d1a0646
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises/2081c77b-1341-4316-bda9-25b75d1a0646
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:64 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:42 Check exercise
+INFO     BASE_ASSERTIONS:base.py:36 Check that "id" equals to 2081c77b-1341-4316-bda9-25b75d1a0646
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Нервно монета торопливый очко.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "course_id" equals to 963c779a-ec65-4f5e-953f-985d420e9cf3
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 92
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 8
+INFO     BASE_ASSERTIONS:base.py:36 Check that "order_index" equals to 58
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Перебивать песня боец куча возмутиться зима. Порт танцевать какой появление конференция вчера девка. Ягода художественный крутой картинка спасть порт.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 validate JSON schema

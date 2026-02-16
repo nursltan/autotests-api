@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjA5LjU5NTk5MCIsInVzZXJfaWQiOiI2YWU4OTM3MS04NTAzLTQyYzUtOGQwYy0wMmM1ZDczYWM0NDMifQ.geiFVi7KgT_vlS7pJ6jwRbQOGPuki-E3-KhMy5BvIHc' \
+  -H 'content-length: 454' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Кожа успокоиться школьный команда.","maxScore":98,"minScore":21,"description":"Единый самостоятельно инвалид решение налево вздрогнуть встать аллея. Жить спалить миг упорно мера бочок.","estimatedTime":"5 weeks","previewFileId":"5bc4888e-6051-45dc-8c7e-50aff6634f12","createdByUserId":"6ae89371-8503-42c5-8d0c-02c5d73ac443"}'

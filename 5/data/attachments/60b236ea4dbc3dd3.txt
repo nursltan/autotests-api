@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjEwLjM0Njk2NyIsInVzZXJfaWQiOiI1YWY0ODk3MS0yYWI3LTQyZjYtOWEwNC04ZjVlODRlNjdhY2EifQ._0QbzxvhmREFMU2TurQR5CRxpK2NmBXdy2Lvf9BXNaE' \
+  -H 'content-length: 437' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Прощение построить избегать смертельный подземный лапа умолять полностью.","maxScore":98,"minScore":26,"description":"Жить господь тысяча пасть. Бровь какой спорт мелочь рота.","estimatedTime":"2 weeks","previewFileId":"49a3cf37-8ab2-402c-9cd6-73660fdfac39","createdByUserId":"5af48971-2ab7-42f6-9a04-8f5e84e67aca"}'

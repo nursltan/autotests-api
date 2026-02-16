@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjA3Ljk1NTc1MyIsInVzZXJfaWQiOiIwODAzM2IyYS0xNGU5LTRjMjYtYjdkNS1kMWNhYjE5MzM5NWYifQ.0_2bQ8lq7_z2X0MRQoDDfLLL18h_KbiiQeDl2_Ye0Us' \
+  -H 'content-length: 612' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Функция вывести вчера услать интернет терапия рот.","maxScore":100,"minScore":13,"description":"Скользить близко юный миф казнь пламя манера. Карандаш юный процесс возмутиться наслаждение развернуться торговля. Даль гулять плясать отражение костер слишком руководитель.","estimatedTime":"3 weeks","previewFileId":"ce819700-6545-4afe-ae5f-103d8b0a8842","createdByUserId":"08033b2a-14e9-4c26-b7d5-d1cab193395f"}'

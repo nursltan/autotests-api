@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjA5LjI4NjgzMyIsInVzZXJfaWQiOiIxZmI4NjRmZC00ODIyLTQ0OWEtOTM4Yy1hZTc3ZGQ1ZGJhNjMifQ.7keqNgUruY6DP7IJQxQi0NUmJyt6QXHzH4Dk64Zt2Dk' \
+  -H 'content-length: 604' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Рай демократия войти выражение исполнять наткнуться.","maxScore":66,"minScore":16,"description":"Прежний применяться коммунизм термин направо подземный командир. Постоянный совещание радость передо аллея наступать. Уронить уронить горький посидеть плясать пастух.","estimatedTime":"4 weeks","previewFileId":"93c82f84-8894-4bd5-84de-4bea6749f2e2","createdByUserId":"1fb864fd-4822-449a-938c-ae77dd5dba63"}'

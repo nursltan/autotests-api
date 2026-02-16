@@ -1,0 +1,21 @@
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:30 Make PATCH request to http://localhost:8000/api/v1/exercises/086ba33f-3421-49cc-92f1-f5c56799b5c4
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises/086ba33f-3421-49cc-92f1-f5c56799b5c4
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:97 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Изба штаб висеть собеседник темнеть скрытый.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 17
+INFO     BASE_ASSERTIONS:base.py:36 Check that "order_index" equals to 43
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Умолять сбросить очко торопливый еврейский. Приходить прошептать отдел кольцо полюбить трубка холодно.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 validate JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjA4LjI2MzgxNiIsInVzZXJfaWQiOiIyYTkxMDliOC03ZThlLTQxZWItYWQ0YS0yMDc5N2FhZGU1OWIifQ.DrrQVd2itjPPUdoLMA5cgEle9GoGYndYlh-2y9RlRj8' \
+  -H 'content-length: 604' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Указанный наслаждение ученый пламя.","maxScore":62,"minScore":30,"description":"Ведь спорт низкий плод кольцо костер уничтожение. Карман ломать плясать бабочка песенка намерение мучительно. Основание ответить уничтожение. Горький мимо юный пасть сынок монета грудь.","estimatedTime":"9 weeks","previewFileId":"e5784862-42a5-460d-867b-18a0c247796f","createdByUserId":"2a9109b8-7e8e-41eb-ad4a-20797aade59b"}'

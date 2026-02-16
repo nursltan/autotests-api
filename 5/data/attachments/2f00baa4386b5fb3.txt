@@ -1,0 +1,20 @@
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:30 Make DELETE request to http://localhost:8000/api/v1/exercises/18845e6c-4bb5-438a-aced-b2bfd670e8b2
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises/18845e6c-4bb5-438a-aced-b2bfd670e8b2
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     HTTP_LOGGER:event_hooks.py:30 Make GET request to http://localhost:8000/api/v1/exercises/18845e6c-4bb5-438a-aced-b2bfd670e8b2
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 404 Not Found from http://localhost:8000/api/v1/exercises/18845e6c-4bb5-438a-aced-b2bfd670e8b2
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 404
+INFO     EXERCISES_ASSERTIONS:exercises.py:114 Check exercise not found response
+INFO     ERRORS_ASSERTIONS:errors.py:57 Check internal error response
+INFO     BASE_ASSERTIONS:base.py:36 Check that "details" equals to Exercise not found
+INFO     SCHEMA_ASSERTIONS:schema.py:20 validate JSON schema

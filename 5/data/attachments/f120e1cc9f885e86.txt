@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjA1LjM2NTIxNyIsInVzZXJfaWQiOiIxY2I5MzNhMC1lNDA0LTQ5MzItYWJhNC0yY2I3YTMwNjE0MzUifQ.p1SXzoAbKmQRHSjgKwmZPJWMUh08NdUpBERp5h3pzeY' \
+  -H 'content-length: 437' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Около идея засунуть.","maxScore":84,"minScore":22,"description":"Соответствие заплакать другой смеяться основание домашний вчера. Вздрогнуть пропасть прощение задрать эффект.","estimatedTime":"5 weeks","previewFileId":"386ec72c-b22d-4dcf-95d9-c45d9f5e83ca","createdByUserId":"1cb933a0-e404-4932-aba4-2cb7a3061435"}'

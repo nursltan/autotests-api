@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTE2VDA4OjQ5OjA2LjY0NTUwMyIsInVzZXJfaWQiOiIxYmMzZDVkYy0zMDAyLTQyOTYtOTNkYS05MTU2ZjJhMTE1NGIifQ.wCGbyjupEJ3f-I2XUZtQjuu8JlvKMTW4wKcmLXDYLvM' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Куча пересечь через мгновение нажать освобождение.","maxScore":65,"minScore":29,"description":"Достоинство господь темнеть. Достоинство спичка мелочь валюта.","estimatedTime":"8 weeks","previewFileId":"b1ebd4df-8f26-4fdb-9726-46b646a70960","createdByUserId":"1bc3d5dc-3002-4296-93da-9156f2a1154b"}'

@@ -1,0 +1,25 @@
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:30 Make GET request to http://localhost:8000/api/v1/exercises?courseId=32457eb4-b633-4676-99a5-1a521efb32c7
+INFO     HTTP_LOGGER:event_hooks.py:39 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=32457eb4-b633-4676-99a5-1a521efb32c7
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:79 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:72 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:42 Check exercise
+INFO     BASE_ASSERTIONS:base.py:36 Check that "id" equals to d0414c32-5dac-41df-afb0-69fb8093cb03
+INFO     BASE_ASSERTIONS:base.py:36 Check that "title" equals to Вывести ребятишки монета горький миллиард кидать.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "course_id" equals to 32457eb4-b633-4676-99a5-1a521efb32c7
+INFO     BASE_ASSERTIONS:base.py:36 Check that "max_score" equals to 100
+INFO     BASE_ASSERTIONS:base.py:36 Check that "min_score" equals to 30
+INFO     BASE_ASSERTIONS:base.py:36 Check that "order_index" equals to 92
+INFO     BASE_ASSERTIONS:base.py:36 Check that "description" equals to Господь советовать возникновение поставить самостоятельно. Правильный грустный угроза белье дурацкий уточнить скрытый.
+INFO     BASE_ASSERTIONS:base.py:36 Check that "estimated_time" equals to 2 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 validate JSON schema
